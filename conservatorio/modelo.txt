@@ -1,0 +1,139 @@
+Personas
+    #id
+    -nombre
+    -apellido_pat
+    -apellido_mat
+    -rut
+    -dv
+    0id_genero
+    -fecha_nacimiento
+
+Profesores
+    #id
+    0id_persona
+    
+Alumnos
+    #id
+    0id_persona
+
+Colaboradores
+    #id
+    0id_persona
+    0id_cargo
+
+Cargos
+    #id
+    0id_area
+    -renta_base
+    -nombre
+
+Areas
+    #id
+    -nombre
+
+Telefonos
+    #id
+    0id_persona
+    -numero
+
+Instrumentos
+    #id
+    -nombre
+    0id_edad_recomendada
+    0id_tipo_instrumento
+
+Edades_recomendadas
+    #id
+    -edad_recomendada
+
+Tipos_instrumentos
+    #id
+    -nombre
+
+Alumnos_Instrumentos
+    #id
+    0id_alumno
+    0id_instrumento
+    -fecha_comienzo_practica
+
+Profesores_Instrumentos
+    #id
+    0id_profesor
+    0id_instrumento
+
+Asignaturas
+    #id
+    -nombre
+    -cantidad_horas_presencial
+
+Notas
+    #id
+    0id_alumno
+    0id_clase
+    -nota
+    -semestre
+
+Matriculas
+    #id
+    0id_alumno
+    -ano
+
+Alumnos_Clases
+    #id
+    0id_alumno
+    0id_clase
+    -semestre
+    -ano
+    
+Clases
+    #id
+    0id_asignatura
+    -semestre
+    0id_instrumento
+
+Asignaturas_Profesores
+    #id
+    -ano
+    0id_profesor
+    0id_asignatura
+
+Generos
+    #id
+    -nombre
+
+Aulas
+    #id
+    -capacidad
+    0id_edificio
+
+Aulas_Instrumentales
+    #id
+    -nombre
+    0id_edificio
+    -metros_cuadrados
+
+Aulas_Instrumentales_Instrumentos
+    #id
+    0id_aula_instrumental
+    0id_instrumento
+    -numero_puestos
+
+Edificios
+    #id
+    -direccion
+    0id_comuna
+    0id_region
+
+Ciudades
+    #id
+    -nombre
+    0id_region
+
+Regiones
+    #id
+    -nombre
+
+Comunas
+    #id
+    -nombre
+    0id_ciudad
